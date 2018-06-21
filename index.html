@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebService接口类生成程序</title>
+</head>
+
+<body>
+  <h1>Hello!</h1>
+  We are using node
+  <script>document.write(process.versions.node)</script>, Chrome
+  <script>document.write(process.versions.chrome)</script>, and Electron
+  <script>document.write(process.versions.electron)</script>.
+  <hr>
+  <div id="main">
+    <label>包绝对路径：</label>
+    <input type="text" style="width: 1500px;" class="packagePath" value="D:\workspace\source\ec-openapi-api\src\main\java\com\ec\servicecenter\openapi\webServiceClient\api\product\command">
+    <br>
+    <label>类名：</label>
+    <input type="text" style="width: 200px;" class="className">
+    <label>注释：</label>
+    <input type="text" style="width: 200px;" class="classComment">
+    <table>
+      <tr>
+        <td>字段</td>
+        <td>注释</td>
+        <td>额外注释</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <textarea rows="20" cols="20" class="field"></textarea>
+        </td>
+        <td>
+          <textarea rows="20" cols="20" class="comment"></textarea>
+        </td>
+        <td>
+          <textarea rows="20" cols="20" class="commentExt"></textarea>
+        </td>
+        <td style="vertical-align: top;padding-left: 20px;padding-top: 30px;">
+          <button id="gen">生成</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+  <div>
+    <div style="width: 570px;float: left;" id="sub1">
+      <label>变量名：</label>
+      <input type="text" style="width: 100px;" class="valName">
+      <label style="margin-left: 40px;">类名：</label>
+      <input type="text" style="width: 200px;" class="className">
+      <table>
+        <tr>
+          <td>字段</td>
+          <td>注释</td>
+          <td>额外注释</td>
+        </tr>
+        <tr>
+          <td>
+            <textarea rows="20" cols="20" class="field"></textarea>
+          </td>
+          <td>
+            <textarea rows="20" cols="20" class="comment"></textarea>
+          </td>
+          <td>
+            <textarea rows="20" cols="20" class="commentExt"></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="float: left;padding-left: 20px;width: 600px;border-left: 1px solid #0e0c0e;" id="sub2">
+      <label>变量名：</label>
+      <input type="text" style="width: 100px;" class="valName">
+      <label style="margin-left: 40px;">类名：</label>
+      <input type="text" style="width: 200px;" class="className">
+      <table>
+        <tr>
+          <td>字段</td>
+          <td>注释</td>
+          <td>额外注释</td>
+        </tr>
+        <tr>
+          <td>
+            <textarea rows="20" cols="20" class="field"></textarea>
+          </td>
+          <td>
+            <textarea rows="20" cols="20" class="comment"></textarea>
+          </td>
+          <td>
+            <textarea rows="20" cols="20" class="commentExt"></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- <script>window.$ = window.jQuery = require('jquery');</script> -->
+  <!-- <script>require("./render.js");</script> -->
+  <script src="render.js"></script>
+</body>
+
+</html>

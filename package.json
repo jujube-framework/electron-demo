@@ -1,0 +1,19 @@
+{
+  "name": "webservice-interface-generator",
+  "version": "1.0.0",
+  "description": "WebService接口类生成程序",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "liheng",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "art-template": "^4.12.2",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,22 @@
+package {{packageName}};
+
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+{{if extFields && extFields.length >0 }}import java.util.List;{{/if}}
+
+{{if classComment}}/**{{classComment}}*/{{/if}}
+@Getter
+@Setter
+public class {{className}} implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	{{each fields field findex}}
+	{{if comments[findex]}}/**{{comments[findex]}}{{if commentsExt[findex]}}--{{commentsExt[findex]}}{{/if}}*/{{/if}}
+	private String {{field}};
+	{{/each}}
+	{{each extFields extField index}}
+	private List<{{extField.className}}> {{extField.valName}};
+	{{/each}}
+}
