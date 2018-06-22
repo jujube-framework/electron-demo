@@ -26,3 +26,4 @@
  npm install
  npm start
 ```
+关于在Windows和Mac下生成可执行文件，参考：https://segmentfault.com/a/1190000007616641
