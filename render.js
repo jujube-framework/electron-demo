@@ -73,7 +73,7 @@ function gen() {
     //先生成sub
     if (data.extFields.length > 0) {
         data.extFields.forEach(e => {
-            var content = template(__dirname + '/templates/class.art', e);
+            var content = template(path.join(__dirname ,  '/templates/class.art'), e);
             //var dst = getJavaFilePath(packagePath, e.className);
             var dst = path.join(packagePath,e.className+".java")            
             fs.writeFileSync(dst, content, "utf-8")
@@ -85,7 +85,7 @@ function gen() {
     //生成主类
     if(data.className){
         var dst = path.join(packagePath,data.className+".java")
-        var content = template(__dirname + '/templates/class.art', data);
+        var content = template(path.join(__dirname , '/templates/class.art'), data);
         fs.writeFileSync(dst, content, "utf-8")
         console.log("已生成文件："+dst)
         console.log("内容："+content)

@@ -10,10 +10,10 @@
   "author": "liheng",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^2.0.2"
+    "electron": "~2.0.2"
   },
   "dependencies": {
-    "art-template": "^4.12.2",
-    "jquery": "^3.3.1"
+    "art-template": "~4.12.2",
+    "jquery": "~3.3.1"
   }
 }
